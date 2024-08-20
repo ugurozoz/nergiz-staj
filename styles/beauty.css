@@ -1,0 +1,530 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  display: flex;
+  width: 100%;
+}
+
+/**** animations ****/
+
+@keyframes fadeInSlideDown {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 0.75;
+  }
+  75% {
+    transform: translateY(0);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(70px);
+    opacity: 0;
+  }
+}
+
+/**** section home ****/
+
+.home {
+  height: 100vh;
+}
+
+.home h1,
+h3,
+h4 {
+  animation: fadeInSlideDown 6s ease-in-out infinite;
+  margin: 0;
+  color: #fff;
+}
+
+.home h1 {
+  font-size: 5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+}
+
+.home h3 {
+  font-size: 1rem;
+  margin-top: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.home h4 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.home h5 {
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.home .mulish-heading {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.home .background-image {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/bg-glow.jpg") no-repeat center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.home .slide-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.home .slide {
+  font-size: 2rem;
+  animation: fadeInSlideDown 4.5s ease-in-out infinite;
+  display: block;
+  opacity: 0;
+  margin-bottom: 1rem;
+}
+
+.home .flex-container {
+  margin-top: 30rem;
+  text-align: center;
+}
+
+.home .button {
+  border: 5px solid #fff;
+  border-radius: 0px;
+  padding: 10px 50px;
+  display: inline-block;
+  animation: fadeInSlideDown 6s ease-in-out infinite;
+  transition: background-color 0.3s ease;
+}
+
+.home .top-text {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  z-index: 1;
+  color: #fff;
+}
+
+.home .top-text h3 {
+  text-align: center;
+}
+
+/***** section foundations *****/
+
+.foundations {
+  background-color: #fff7f7;
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 75px;
+}
+
+.foundations-image {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+
+.foundations-title {
+  color: #a24e4e;
+  font-size: 60px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.foundations-image div {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+}
+
+.foundations-image div span {
+  font-size: 32px;
+  margin: 20px 0 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.foundations-image div:nth-child(1) {
+  background: url("../images/cleaning.jpg") no-repeat center;
+}
+
+.foundations-image div:nth-child(2) {
+  background: url("../images/mandelic.jpg") no-repeat center;
+}
+
+.foundations-image div:nth-child(3) {
+  background: url("../images/glycolic.jpg") no-repeat center;
+}
+
+/***** section skincare *****/
+
+.skincare {
+  background-color: #fff7f7;
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 75px;
+}
+
+.skincare-image {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+
+.skincare-title {
+  color: #a24e4e;
+  font-size: 60px;
+  font-family: "Times New Roman", Times, serif;
+}
+.skincare-image div {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+}
+
+.skincare-image div span {
+  font-size: 32px;
+  margin: 20px 0 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.skincare-image div:nth-child(1) {
+  background: url("../images/microdermabrasion.jpg") no-repeat center center /
+    cover;
+}
+
+.skincare-image div:nth-child(2) {
+  background: url("../images/sun-damage.jpg") no-repeat center center / cover;
+}
+
+.skincare-image div:nth-child(3) {
+  background: url("../images/pixeltone.jpg") no-repeat center center / cover;
+}
+
+/***** section product *****/
+
+.product {
+  font-family: "Mulish", sans-serif;
+  background-color: #a24e4e;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 75px;
+}
+
+.product .background-image {
+  width: 50%;
+  height: 100%;
+  background: url("../images/beauty.jpg") no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-purpose,
+.product-introduction {
+  color: #fff;
+}
+
+.product-purpose {
+  text-align: center;
+  font-size: 70px;
+  padding: 0 100px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.product-introduction {
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  font-size: 26px;
+  padding: 0 40px;
+  line-height: 40px;
+}
+
+.product-introduction div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-introduction img:nth-child(1) {
+  width: 52px;
+  height: 36px;
+}
+
+.product-introduction img:nth-child(2) {
+  width: 40px;
+  height: 67px;
+}
+
+.product-introduction img:nth-child(3) {
+  width: 47px;
+  height: 46px;
+}
+
+/**** section intention ****/
+
+.intention {
+  background-color: #e4d6d5;
+  height: 100vh;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.intention-point {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 4.5rem;
+  color: #a24e4e;
+  line-height: 1.1em;
+  letter-spacing: -0.06em;
+  text-align: center;
+}
+
+.intention-emphasis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  overflow-wrap: break-word;
+}
+
+.intention-text {
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  color: #a24e4e;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+}
+
+/***** section glow *****/
+
+.glow {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.glow h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.glow .background-image {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/bg-shine.jpg") no-repeat center center / cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.glow .slide-container {
+  animation: fadeInSlideDown 6s ease-in-out infinite;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  position: absolute;
+  top: 35%;
+  gap: 25px;
+}
+
+.glow h4 {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/***** section customer *****/
+
+.customer {
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  background-color: #e4d6d5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 75px;
+}
+.customer-title {
+  color: #a24e4e;
+  font-size: 72px;
+  margin-bottom: 50px;
+  letter-spacing: -5px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.customer-box {
+  display: flex;
+  gap: 8px;
+}
+
+.customer-box-item {
+  width: 33.3333%;
+  height: 375px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #a24e4e;
+  border: 1px solid #a24e4e;
+  padding: 0 40px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.customer-box-item span {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/***** section contact *****/
+
+.contact {
+  background-color: #a24e4e;
+  height: 100vh;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: -200px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  gap: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-content h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 15px;
+}
+
+.contact-content p a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.contact-social__icons {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-social__icons img {
+  width: 38px;
+  height: 38px;
+}
+
+/***** 1024px altı*****/
+@media only screen and (max-width: 1024px) {
+  .home .top-text {
+    padding-top: 20px;
+  }
+  .intention-emphasis {
+    padding: 0 40px 0 40px;
+  }
+}
+
+/***** 768px altı *****/
+@media only screen and (max-width: 768px) {
+  .customer-box-item {
+    padding: 30px 0 30px 0;
+  }
+  .skincare-image div span {
+    font-size: 20px;
+  }
+  .product-introduction img:nth-child(1) {
+    width: 100px;
+    height: 20px;
+  }
+  .product {
+  height: auto;
+  }
+}
