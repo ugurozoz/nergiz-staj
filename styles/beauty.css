@@ -515,7 +515,7 @@ h4 {
 /***** 768px altı *****/
 @media only screen and (max-width: 768px) {
   .customer-box-item {
-    padding: 30px 0 30px 0;
+    padding: 30px 10px 30px 10px;
   }
   .skincare-image div span {
     font-size: 20px;
@@ -525,24 +525,127 @@ h4 {
     height: 20px;
   }
   .product {
-  height: auto;
-  align-items: stretch;
+    height: auto;
+    align-items: stretch;
   }
 
-  .product .background-image{
+  .product .background-image {
     height: auto;
   }
 }
 /*****/
 
-
 @media only screen and (max-width: 600px) {
-
-  .foundations-image{
+  .foundations-image {
     flex-direction: column;
-    
-
   }
 
+  .intention {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .glow h1 {
+    flex-direction: column;
+    display: flex;
+    line-height: 50px;
+    margin: 20px;
+    font-size: 3rem;
+    font-weight: 200;
+  }
+
+  .glow h4 {
+    flex-direction: column;
+    display: flex;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .glow .slide-container {
+    position: absolute;
+    top: 25%;
+    gap: 0;
+  }
+
+  .customer {
+    height: 100%;
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  
+  .customer-title {
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .customer-box {
+    width: 60%;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .customer-box-item {
+    width: 100%;
+    height: 300px;
+    font-size: 14px;
+    padding: 0 40px;
+  }
+
+  .customer-box-item span {
+    font-size: 20px;
+  }
+
+  .skincare-image {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .product {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+  }
+
+  .product .background-image {
+    width: 100%;
+    height: calc(100vh - 100px);
+  }
+
+  .product-introduction {
+    padding: 40px 0;
+  }
+
+  .contact {
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+  }
+
+  .contact-title {
+    margin-top: 100px;
+    font-size: 3.2rem;
+  }
+  
+  .foundations-image div {
+    height: calc(100vh - 150px);
+  }
+
+  .home .top-text{
+    padding-top: 100px
+  }
+
+  .home h1{
+    font-size: 2.5rem;
+    font-weight: 500
+  }
+ .home h4{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 30px;
+ }
+ .home .flex-container {
+  margin-top: 20rem;
 }
 
+}
