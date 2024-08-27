@@ -92,6 +92,7 @@ h4 {
   position: relative;
   text-align: center;
   color: #fff;
+  background-size: cover;
 }
 
 .home .slide-container {
